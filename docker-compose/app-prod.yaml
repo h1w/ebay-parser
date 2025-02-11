@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: app
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    restart: always
+    env_file:
+      - ../.env
