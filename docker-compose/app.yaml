@@ -1,0 +1,11 @@
+services:
+  app:
+    container_name: ebay-parser
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    env_file:
+      - ../.env
+    volumes:
+      - ../app/:/app/app
+      - ../processed_items.json:/app/processed_items.json
