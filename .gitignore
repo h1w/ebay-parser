@@ -4,3 +4,4 @@ __pycache__/
 .env
 .ruff_cache/
 poetry.lock
+processed_items.json
